@@ -1,4 +1,4 @@
-module github.com/hatchify/mod-utils
+module github.com/gomuserver/mod-utils
 
 go 1.14
 
