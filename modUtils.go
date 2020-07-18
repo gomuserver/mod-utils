@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"path"
 
-	"github.com/hatchify/mod-utils/sort"
+	"github.com/gomuserver/mod-utils/sort"
 )
 
 // CleanModCache calls go clean --modcache from calling directory. No context necessary

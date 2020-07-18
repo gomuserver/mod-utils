@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hatchify/mod-utils/com"
-	"github.com/hatchify/mod-utils/sort"
+	"github.com/gomuserver/mod-utils/com"
+	"github.com/gomuserver/mod-utils/sort"
 	"github.com/remeh/sizedwaitgroup"
 )
 

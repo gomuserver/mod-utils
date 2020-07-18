@@ -5,7 +5,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/hatchify/mod-utils/com"
+	"github.com/gomuserver/mod-utils/com"
 )
 
 // SortedRecursiveDeps returns a linked list of FileNodes directly or indirectly depending on provided filters

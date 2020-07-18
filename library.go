@@ -1,8 +1,8 @@
 package gomu
 
 import (
-	"github.com/hatchify/mod-utils/com"
-	"github.com/hatchify/mod-utils/sort"
+	"github.com/gomuserver/mod-utils/com"
+	"github.com/gomuserver/mod-utils/sort"
 )
 
 // Library represents a file and its updated deps

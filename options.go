@@ -3,8 +3,8 @@ package gomu
 import (
 	"strings"
 
-	"github.com/hatchify/mod-utils/com"
-	"github.com/hatchify/mod-utils/sort"
+	"github.com/gomuserver/mod-utils/com"
+	"github.com/gomuserver/mod-utils/sort"
 )
 
 // Options represents different settings to perform an action
