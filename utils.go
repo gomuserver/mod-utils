@@ -96,7 +96,7 @@ func (mu *MU) sync(lib Library, commitTitle, commitMessage string) {
 		// Dep was updated
 		lib.File.Updated = true
 		mu.Stats.UpdateCount++
-		mu.Stats.UpdatedOutput += strconv.Itoa(mu.Stats.UpdateCount) + ") " + lib.File.Path + "\n"
+		mu.Stats.UpdatedOutput += strconv.Itoa(mu.Stats.UpdateCount) + ") " + lib.File.GetGoURL() + "\n"
 	}
 }
 
@@ -153,7 +153,7 @@ func (mu *MU) tag(lib Library) {
 			lib.File.Version = newTag
 			lib.File.Tagged = true
 			mu.Stats.TagCount++
-			mu.Stats.TaggedOutput += strconv.Itoa(mu.Stats.TagCount) + ") " + lib.File.Path + " " + lib.File.Version + "\n"
+			mu.Stats.TaggedOutput += strconv.Itoa(mu.Stats.TagCount) + ") " + lib.File.GetGoURL() + " " + lib.File.Version + "\n"
 		}
 	}
 
@@ -221,7 +221,7 @@ func (mu *MU) commit(lib Library) {
 
 		if lib.File.Committed {
 			mu.Stats.CommitCount++
-			mu.Stats.DeployedOutput += strconv.Itoa(mu.Stats.CommitCount) + ") " + lib.File.Path + "\n"
+			mu.Stats.DeployedOutput += strconv.Itoa(mu.Stats.CommitCount) + ") " + lib.File.GetGoURL() + "\n"
 		}
 	}
 }
