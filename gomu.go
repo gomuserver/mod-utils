@@ -73,6 +73,8 @@ func (mu *MU) performThenClose() {
 }
 
 func (mu *MU) perform() {
+	com.SetLogLevel(mu.Options.LogLevel)
+
 	if mu.Options.PullRequest {
 		authObject, err := com.LoadAuth()
 		if err != nil || len(authObject.User) == 0 || len(authObject.Token) == 0 {
