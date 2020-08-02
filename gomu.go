@@ -165,7 +165,7 @@ func (mu *MU) perform() {
 
 		com.Println("\n" + strings.Join(warningActions, "\n  "))
 
-		if !ShowWarning("\nIs this ok?") {
+		if !mu.Options.IgnoreWarning && !ShowWarning("\nIs this ok?") {
 			cleanupStash(libs)
 			os.Exit(-1)
 		}

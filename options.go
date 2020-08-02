@@ -25,7 +25,8 @@ type Options struct {
 	TargetDirectories  sort.StringArray `json:"searchLibs"` // Not supported from server
 	FilterDependencies sort.StringArray `json:"syncLibs"`
 
-	LogLevel com.LogLevel
+	LogLevel      com.LogLevel
+	IgnoreWarning bool
 }
 
 // New returns new Mod Utils struct
